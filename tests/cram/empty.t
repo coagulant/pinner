@@ -4,8 +4,9 @@ Initial setup:
   $ export PYTHONPATH=$TMPDIR
   $ cd ${TESTDIR}/../../
   $ $PYTHON setup.py develop --install-dir=$TMPDIR > /dev/null 2>&1
+  $ alias pinner="$TMPDIR/pinner"
 
-Test normal behavior without write:
+Pinner didn't find any requirements files and exits with code 1:
 
   $ cd $TESTDIR/../../
   $ pinner

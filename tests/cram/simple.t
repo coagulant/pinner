@@ -4,8 +4,9 @@ Initial setup:
   $ export PYTHONPATH=$TMPDIR
   $ cd ${TESTDIR}/../../
   $ $PYTHON setup.py develop --install-dir=$TMPDIR > /dev/null 2>&1
+  $ alias pinner="$TMPDIR/pinner"
 
-Test normal behavior without write:
+Pinner founds 4 problems with dependencies:
 
   $ cd $TESTDIR/../../test_project
   $ pinner
