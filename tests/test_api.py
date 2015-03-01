@@ -37,10 +37,10 @@ def test_requirement_has_revision():
 def test_find_requirements():
     test_dir = abspath(join(basename(__file__), '..', 'test_project'))
     assert list([relpath(path, test_dir) for path in find_requirements(test_dir)]) == [
-        'requirements-dev.txt',
-        'requirements.txt',
-        'requirements.pip',
         'reqs.txt',
+        'requirements-dev.txt',
+        'requirements.pip',
+        'requirements.txt',
         'requirements/local.txt',
         'requirements/production.pip'
     ]

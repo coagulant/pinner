@@ -27,9 +27,11 @@ def find_requirements(base_dir):
                          'reqs.txt',
                          'requirements/*.txt',
                          'requirements/*.pip')
+    files = []
     for pattern in chain(map(glob.iglob, [join(base_dir, pattern) for pattern in possible_patterns])):
         for file in pattern:
-            yield file
+            files.append(file)
+    return sorted(files)
 
 
 def check_requirement(req):
