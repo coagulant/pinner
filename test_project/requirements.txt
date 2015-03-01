@@ -1,0 +1,6 @@
+PIL
+coveralls>=1.0a1
+responses==0.3.0
+git+https://github.com/miracle2k/django-assets.git@master#egg=django_assets
+-e git+git://github.com/miracle2k/webassets.git@9956fb86c1c750672324b2c95c9a464a0ef11a4f#egg=webassets
+git+https://github.com/fcurella/django-recommends.git#egg=django_recommends
