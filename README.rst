@@ -8,9 +8,11 @@ pinner
 .. image:: https://img.shields.io/pypi/v/pinner.svg
         :target: https://pypi.python.org/pypi/pinner
 
+.. image:: https://img.shields.io/badge/licence-BSD-blue.svg
+
 A tiny console script to verify you have pinned all of your python requirements.
 
-[Why you should specify exact version in requirements.txt](http://nvie.com/posts/pin-your-packages/).
+`Why you should specify exact version in requirements.txt <http://nvie.com/posts/pin-your-packages/>`_
 
 Example::
 
