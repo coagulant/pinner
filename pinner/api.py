@@ -60,6 +60,8 @@ def process_file(path, emit_warning):
     with codecs.open(path, 'r') as f:
         for i, line in enumerate(f, start=1):
             req = next(requirements.parse(line), None)
+            if not req:
+                continue
             try:
                 check_requirement(req)
             except PinnerWarning as e:
